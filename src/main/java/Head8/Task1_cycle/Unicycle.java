@@ -14,4 +14,6 @@ public class Unicycle extends Cycle {
     public int wheels() {
         return 1;
     }
+
+    public void balance(){}
 }

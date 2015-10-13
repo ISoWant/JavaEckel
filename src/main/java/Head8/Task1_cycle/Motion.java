@@ -22,5 +22,12 @@ public class Motion {
 
         Unicycle unicycle = new Unicycle();
         start(unicycle);
+
+        Cycle[] cysles = {new Unicycle(),
+            new Bicycle(), new Tricycle()};
+        //cycles[0].balance(); не пашет, так как нету нисходящего преобразования
+        //а изначально в классе Cycle метод balance() не объявлен
+        ((Unicycle)cysles[0]).balance();
+        ((Bicycle)cysles[1]).balance();
     }
 }
